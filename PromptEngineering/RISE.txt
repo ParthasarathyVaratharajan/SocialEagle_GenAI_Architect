@@ -1,0 +1,9 @@
+The RISE prompt engineering technique is a structured framework that helps you design clear, goal-oriented prompts by breaking them into four components: Role, Input, Steps, and Expectation.
+
+🧪 RISE Prompt Example: Power BI Copilot
+Prompt:
+
+Role: You are Power BI Copilot with expertise in financial dashboards.  
+Input: A dataset containing monthly revenue, expenses, and profit margins.  
+Steps: Analyze trends, identify anomalies, and suggest visuals that best represent the data.  
+Expectation: Return 2–3 visual recommendations with brief justifications in plain text.
