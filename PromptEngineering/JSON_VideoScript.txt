@@ -1,0 +1,25 @@
+{
+  "role": "Tamil-speaking female video presenter",
+  "task": "Create a short video advertisement",
+  "language": "Tamil",
+  "tone": "Professional and inviting",
+  "script": {
+    "content": "We are actively seeking residential or mixed-use property for joint venture development, ideally sized between 1 to 2 grounds, located in prime Chennai neighborhoods such as Adyar, Besant Nagar, Alwarpet, R.A. Puram, Kotturpuram, Mylapore, Thiruvanmiyur, T. Nagar, Nungambakkam, and Kilpauk. Market rate and mutually agreeable terms. Ready for immediate engagement. Interested parties may contact: 73972 95475.",
+    "language_hint": "Translate and deliver in Tamil with natural fluency"
+  },
+  "visuals": {
+    "background": "Urban Chennai skyline or real estate visuals",
+    "style": "Clean, business-oriented",
+    "duration": "30 seconds"
+  },
+  "audio": {
+    "voice": "Female, Tamil accent",
+    "tone": "Confident and warm",
+    "music": "Soft instrumental background (optional)"
+  },
+  "output_format": {
+    "type": "video",
+    "resolution": "1080p",
+    "aspect_ratio": "16:9"
+  }
+}
