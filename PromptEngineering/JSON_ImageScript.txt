@@ -1,0 +1,33 @@
+{
+  "prompt": "Create a split-themed branding image for 'EAGLEQUILL ARCHITECTS'. The left half should depict classical architecture with parchment scrolls, hand-drawn building sketches, and a vintage quill pen on a wooden surface. The right half should showcase a futuristic cityscape with glowing skyscrapers, holographic cubes, and digital circuit overlays. In the center, place a stylized eagle head logo above the text 'EAGLEQUILL ARCHITECTS', blending tradition and innovation.",
+  "style": {
+    "composition": "split-screen",
+    "color_palette": "warm sepia tones on the left, cool neon blues on the right",
+    "lighting": "soft ambient on classical side, radiant glow on futuristic side",
+    "resolution": "1920x1080",
+    "aspect_ratio": "16:9"
+  },
+  "elements": {
+    "left": {
+      "theme": "classical architecture",
+      "objects": ["parchment scroll", "quill pen", "architectural sketches"],
+      "texture": "wood grain"
+    },
+    "right": {
+      "theme": "futuristic urban design",
+      "objects": ["skyscrapers", "holographic cubes", "digital circuits"],
+      "effects": ["glow", "light trails"]
+    },
+    "center": {
+      "logo": "stylized eagle head",
+      "text": "EAGLEQUILL ARCHITECTS",
+      "font": "modern serif",
+      "alignment": "centered"
+    }
+  },
+  "output_format": {
+    "type": "image",
+    "file_format": "PNG",
+    "quality": "high"
+  }
+}

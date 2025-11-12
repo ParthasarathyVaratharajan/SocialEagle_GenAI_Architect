@@ -1,0 +1,32 @@
+JSON Prompt Engineering is a structured prompting technique that uses JSON format to define tasks, inputs, and expected outputs — enabling clarity, consistency, and machine-readability in LLM interactions.
+
+🧠 What Is JSON Prompting?
+Instead of writing free-form natural language prompts, JSON prompting encodes instructions as structured key-value pairs. This format is both human-readable and programmatically parsable, making it ideal for:
+- Tool-augmented LLMs
+- Multi-agent systems
+- API-driven workflows
+- Prompt chaining pipelines
+- Output validation and parsing
+
+🧪 JSON Prompt Template
+Here’s a basic structure:
+
+{
+  "role": "Power BI Copilot",
+  "task": "Generate a DAX measure for YoY revenue growth",
+  "input": {
+    "table": "Sales",
+    "columns": ["Date", "Revenue"]
+  },
+  "constraints": {
+    "format": "DAX formula only",
+    "explanation": true
+  }
+}
+
+Expected OutPut:
+
+{
+  "dax_formula": "YoY Growth = DIVIDE([Total Revenue] - CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Date'[Date])), CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Date'[Date])))",
+  "explanation": "This formula compares current revenue to last year using SAMEPERIODLASTYEAR and calculates the percentage change."
+}
