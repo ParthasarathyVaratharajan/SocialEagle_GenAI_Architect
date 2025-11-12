@@ -1,0 +1,25 @@
+The CARE prompt engineering technique is a structured framework for designing clear, contextual, and actionable prompts. It stands for:
+Context → Action → Result → Example
+
+🧠 What Is CARE Prompting?
+CARE is designed to help you write prompts that guide AI models toward practical, applicable outputs. It’s especially useful for business workflows, Copilot integrations, and reproducible prompt templates.
+
+
+Context: We’re designing a Power BI dashboard for a retail chain’s Q4 performance.  
+Action: Generate a DAX measure to calculate Year-over-Year revenue growth.  
+Result: Return a single DAX formula with a brief explanation.  
+Example: Use SAMEPERIODLASTYEAR to compare current and previous year revenue.
+
+
+Expected outputs
+
+YoY Growth = 
+DIVIDE(
+    [Total Revenue] - CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Date'[Date])),
+    CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Date'[Date]))
+)
+
+
+
+
+
