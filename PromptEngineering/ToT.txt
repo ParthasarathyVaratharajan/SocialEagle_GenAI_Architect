@@ -1,0 +1,34 @@
+🌳 What Is Tree of Thought (ToT)?
+Tree of Thought prompting structures the model’s reasoning as a tree, where each node is a “thought” — a coherent intermediate step toward solving a problem. From each node, the model can generate multiple branches, exploring different ideas or strategies in parallel.
+Unlike Chain of Thought (CoT), which follows a single linear path, ToT allows the model to explore multiple reasoning paths, evaluate their progress, and choose the most promising one.
+
+🧠 How It Works
+- Decompose the problem into intermediate steps (thoughts).
+- Branch from each thought with multiple continuations.
+- Evaluate each branch based on criteria like coherence, progress, or utility.
+- Prune weak paths, continue exploring strong ones.
+- Select the best path to arrive at the final answer.
+This mimics human problem-solving: we brainstorm, explore options, discard dead ends, and refine our thinking
+
+
+You are an AI security analyst.  
+Task: Evaluate a Copilot prompt for injection risks.  
+Use Tree of Thought reasoning to explore multiple detection strategies.  
+At each step, generate 2–3 possible thoughts. Evaluate and select the best path.
+
+Thought Tree:
+- Node 1: Identify injection vectors
+- Branch A: User input embedded in prompt
+- Branch B: External document references
+- Branch C: Multi-turn memory corruption
+→ Select Branch A (most direct)
+- Node 2: Analyze embedded input
+- Branch A: Look for override phrases (“Ignore previous instructions”)
+- Branch B: Search for command-like syntax
+- Branch C: Check for hidden delimiters
+→ Select Branch A (highest risk)
+- Node 3: Recommend mitigation
+- Branch A: Use delimiters
+- Branch B: Sanitize inputs
+- Branch C: Role-based prompt isolation
+→ Combine A + B for best defense
