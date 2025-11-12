@@ -1,0 +1,14 @@
+The TAG prompt engineering technique stands for Task, Audience, and Goal — a lightweight but powerful framework for designing purpose-driven prompts.
+
+🧪 TAG Prompt Example: Power BI Copilot
+Prompt:
+
+Task: Summarize the insights from a Power BI dashboard containing revenue, churn, and regional performance.  
+Audience: Executive stakeholders unfamiliar with technical details.  
+Goal: Help them make strategic decisions for Q1 planning.
+
+Expected Output:
+Revenue increased 12% in the North region, while churn rose slightly in the South. The West region showed stable performance. Overall, Q4 trends suggest focusing retention efforts in the South and expanding sales in the North.
+
+
+
