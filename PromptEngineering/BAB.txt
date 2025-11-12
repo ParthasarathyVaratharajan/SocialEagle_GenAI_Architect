@@ -1,0 +1,10 @@
+The BAB prompt engineering technique stands for Before–After–Bridge — a storytelling-inspired framework that helps you craft persuasive, emotionally resonant prompts.
+
+🧪 BAB Prompt Example: Power BI Copilot
+Prompt:
+Before: You’re using Power BI Copilot but struggling to get it to generate the right visuals.  
+After: You want Copilot to consistently create accurate, business-relevant charts with minimal rework.  
+Bridge: Let’s design a prompt using the RTCFR format to guide Copilot’s behavior clearly and reproducibly.
+
+Expected Output:
+Copilot responds with a structured visual recommendation, e.g., “Create a clustered column chart showing total revenue by region for the last quarter.”
