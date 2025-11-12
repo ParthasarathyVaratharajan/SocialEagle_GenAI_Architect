@@ -1,0 +1,7 @@
+Chain of Thought
+
+Question: [Insert your complex question here]  
+Let's think step by step.
+
+Question: A user wants to calculate Year-over-Year (YoY) growth in Power BI using DAX. They have a 'Sales' table with 'Date' and 'Revenue' columns. How should they approach it?
+Let's think step by step.

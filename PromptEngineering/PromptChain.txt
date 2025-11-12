@@ -1,0 +1,15 @@
+🔗 Prompt 1: Generate Outline Instruction: Create a detailed blog outline on the topic: “Prompt Injection in Prompt Engineering” 
+Tone: Professional, insightful, and suitable for LinkedIn readers. 
+Audience: Technologists and AI enthusiasts new to prompt engineering but curious about advanced techniques. 
+Output Format: Numbered list with section titles only.
+
+🔗 Prompt 2: Expand Outline Instruction: Expand each section from the outline into detailed paragraphs. Each section should explain the concept clearly, include examples, and maintain a logical flow. 
+Tone: Conversational yet authoritative. 
+Audience: Same as above. 
+Output Format: Plain text, no Markdown or HTML.
+
+🔗 Prompt 3: Rewrite as LinkedIn Blog Instruction: Rewrite the expanded content into a LinkedIn-ready blog post. 
+Ensure the final output is ≤3000 characters, optimized for readability and engagement. 
+Tone: Thoughtful, concise, and slightly narrative. 
+Audience: LinkedIn professionals interested in AI workflows and prompt engineering. 
+Output Format: Plain text, no headings or formatting tags.
