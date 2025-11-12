@@ -1,0 +1,34 @@
+{
+  "prompt": "Design a professional and elegant greeting card to express gratitude for Social Eagle’s Gen AI Architect Program. The card should feature a heartfelt message and signature, with a clean layout and warm tones.",
+  "layout": {
+    "orientation": "landscape",
+    "dimensions": "1920x1080",
+    "text_alignment": "center",
+    "font_style": "serif",
+    "font_size": {
+      "title": "36px",
+      "body": "24px",
+      "signature": "20px"
+    }
+  },
+  "color_scheme": {
+    "background": "soft ivory or parchment",
+    "text_color": "dark brown or charcoal",
+    "accent": "gold or bronze highlights"
+  },
+  "content": {
+    "title": "Gratitude for Social Eagle’s Gen AI Architect Program",
+    "body": "I extend my heartfelt thanks to Social Eagle for curating the transformative Gen AI Architect Program — a truly enriching experience that deepened my understanding of generative AI workflows and architectural thinking.\n\nSpecial appreciation to our mentors Manoj and Thiru, whose guidance, clarity, and hands-on insights elevated the learning journey. Their commitment to excellence and real-world relevance made every session impactful.\n\nLooking forward to applying these learnings in future AI-driven innovations and collaborations.",
+    "signature": "Parthasarathy Varatharajan"
+  },
+  "decorations": {
+    "border": "thin gold frame",
+    "icons": ["lightbulb", "circuit pattern", "quill pen"],
+    "logo": "optional placeholder for Social Eagle"
+  },
+  "output_format": {
+    "type": "image",
+    "file_format": "PNG",
+    "quality": "high"
+  }
+}
