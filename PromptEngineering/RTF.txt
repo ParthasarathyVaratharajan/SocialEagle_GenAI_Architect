@@ -1,0 +1,14 @@
+RTF stands for Role, Task, Format — a simple yet powerful prompt engineering framework that helps you design clear, structured prompts for consistent and high-quality outputs.
+
+🧪 RTF Prompt Example: Power BI Copilot
+Prompt:
+Role: You are Power BI Copilot with expertise in financial dashboards.  
+Task: Generate a DAX measure to calculate Year-over-Year revenue growth.  
+Format: Return a single DAX formula with a brief explanation in plain text.
+
+Expected Output:
+YoY Growth = 
+DIVIDE(
+    [Total Revenue] - CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Date'[Date])),
+    CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Date'[Date]))
+)
