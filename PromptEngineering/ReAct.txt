@@ -1,0 +1,43 @@
+🧠 What Is ReAct?
+ReAct = Reasoning + Acting
+It’s a prompt strategy where the model:
+- Thinks step by step (like Chain of Thought)
+- Takes actions (e.g., calling tools, querying APIs, retrieving documents)
+- Reflects on results
+- Repeats the cycle until a final answer is reached
+This technique is ideal for:
+- Multi-step decision making
+- Tool-augmented workflows (e.g., search, calculator, database)
+- Autonomous agents and multi-modal systems
+- Debugging, planning, and retrieval tasks
+
+Example: Template
+
+You are an intelligent agent that solves problems by reasoning and acting.
+
+When given a question, follow this format:
+Thought: [Your reasoning step]
+Action: [Your chosen action]
+Observation: [Result of the action]
+... (repeat Thought → Action → Observation)
+Answer: [Final answer]
+
+Question: [Insert your question here]
+
+
+Exmple: Sample
+
+You are an intelligent assistant helping debug Power BI Copilot.
+
+Question: Why is Copilot not generating visuals for my dataset?
+
+Thought: First, check if the dataset has semantic metadata.
+Action: Inspect dataset schema.
+Observation: Dataset has columns but no relationships or measures.
+
+Thought: Copilot relies on semantic models to infer intent.
+Action: Check if a semantic model is defined.
+Observation: No semantic model present.
+
+Thought: Without semantic context, Copilot cannot generate meaningful visuals.
+Answer: Add relationships and measures to your dataset to enable Copilot visualization.
