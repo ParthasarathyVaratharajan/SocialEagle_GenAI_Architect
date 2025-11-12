@@ -1,0 +1,26 @@
+Role:
+Act as a Python developer experienced in building Streamlit apps for financial utilities.
+
+Task:
+Build a Streamlit application that splits expenses among friends after a dinner or trip.
+
+Context:
+The app should allow users to input:
+- Total expense amount
+- Number of people
+- Optional: names and individual contributions
+The app should calculate:
+- Equal share per person
+- Who owes money and how much
+- Who gets reimbursed and how much
+It should display results clearly and handle edge cases (e.g., missing names, unequal contributions).
+
+Format:
+Provide a complete Python script using Streamlit. Include:
+- Input widgets for amount, number of people, names, and contributions
+- Logic to compute balances
+- Output section showing who owes or gets back money
+- Optional: use pandas for tabular display
+
+Response Constraints:
+Keep the code under 100 lines. Use plain Python and Streamlit only. Avoid external libraries unless necessary.
