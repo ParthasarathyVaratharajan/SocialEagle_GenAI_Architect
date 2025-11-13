@@ -1,0 +1,55 @@
+{
+  "title": "Rise of the Gen AI Architect",
+  "description": "A mascot-led journey from AI confusion to mastery, featuring Social Eagle's Gen AI Architect program.",
+  "scenes": [
+    {
+      "scene_id": "1",
+      "title": "The Fog of AI",
+      "setting": "Dim room with Spark scrolling through social media reels",
+      "characters": ["Spark", "Eaglo"],
+      "dialogue": [
+        { "character": "Spark", "line": "GPT this, LangChain that… Hugging Face? I’m hugging confusion!" },
+        { "character": "Eaglo", "line": "Fear not, Spark! You’re not alone in the AI jungle. You’re just one buildathon away from clarity!" }
+      ],
+      "action": "Eaglo swoops in dramatically, glowing feathers trailing light."
+    },
+    {
+      "scene_id": "2",
+      "title": "The Awakening",
+      "setting": "Backdrop transforms into IIT Madras Research Park",
+      "characters": ["Eaglo", "Spark", "Thiru", "Manoj"],
+      "dialogue": [
+        { "character": "Eaglo", "line": "Let me show you the roadmap—from reels to real projects, from random tools to your own tech stack!" },
+        { "character": "Thiru", "line": "25+ models trained. Voice, vision, and vibes—GenAI is not just code, it’s culture." },
+        { "character": "Manoj", "line": "Micro-SaaS, agentic workflows, automations that save hours—this is your unfair advantage." }
+      ],
+      "action": "Mentors appear with glowing laptops and holographic dashboards."
+    },
+    {
+      "scene_id": "3",
+      "title": "The Buildathon Arena",
+      "setting": "High-energy co-building space with sticky notes and laptops",
+      "characters": ["Spark", "Community Chorus"],
+      "dialogue": [
+        { "character": "Chorus", "line": "Vibe coding! Real-time docs! MVP in 48 hours!" },
+        { "character": "Spark", "line": "Wait… I just built a Loan Helper app. And I understand LangChain now!" },
+        { "character": "Eaglo", "line": "Welcome, Architect. You’ve crossed from A to B." }
+      ],
+      "action": "Spark builds app live; crowd cheers; Eaglo nods proudly."
+    },
+    {
+      "scene_id": "4",
+      "title": "The Flight Forward",
+      "setting": "Skyline with Eaglo flying above a cheering crowd",
+      "characters": ["Eaglo", "Community Chorus"],
+      "dialogue": [
+        { "character": "Eaglo", "line": "From mindset to mastery, from confusion to clarity—this is not just a course. It’s a movement." },
+        { "character": "Chorus", "line": "Build. Automate. Scale. Fly high with Social Eagle!" }
+      ],
+      "action": "Eaglo spreads wings; crowd chants; logo appears with tagline: 'SOCIALEAGLE.AI – business redefined.'"
+    }
+  ],
+  "visual_style": "Energetic, animated, mascot-led with vibrant transitions and community scenes",
+  "audio_style": "Uplifting background music, mascot voiceover, crowd chants",
+  "duration": "90-120 seconds"
+}
