@@ -5,7 +5,8 @@ from langchain_community.document_loaders import ArxivLoader
 arxiv_query = "machine learning"  # Search for papers on machine learning
 
 # Initialize the ArxivLoader
-loader = ArxivLoader(query=arxiv_query, load_max_docs=5)  # Load max 5 papers
+#loader = ArxivLoader(query=arxiv_query, load_max_docs=5)  # Load max 5 papers
+loader = ArxivLoader(query="1706.03762", load_max_docs=5)  # Load max 5 papers
 
 # Load the documents
 documents = loader.load()
