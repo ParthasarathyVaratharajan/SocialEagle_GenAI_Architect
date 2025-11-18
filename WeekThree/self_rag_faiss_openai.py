@@ -1,3 +1,4 @@
+import os
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import WikipediaLoader
@@ -5,9 +6,14 @@ from langchain_community.vectorstores import FAISS
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
 
-# Set your OpenAI API key before running:
-# export OPENAI_API_KEY="your-api-key-here"  (Linux/Mac)
-# set OPENAI_API_KEY=your-api-key-here       (Windows)
+# Check for OpenAI API key
+api_key = os.getenv("OPENAI_API_KEY")
+if not api_key:
+    raise ValueError(
+        "OPENAI_API_KEY environment variable not set. "
+        "Please run: $env:OPENAI_API_KEY='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' (PowerShell) "
+        "or set OPENAI_API_KEY=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 (cmd)"
+    )
 
 # Load and split documents
 print("Loading document...")
@@ -30,9 +36,9 @@ if documents:
     retriever = db.as_retriever(search_type="similarity", search_kwargs={"k": 3})
     print("FAISS vector store created.\n")
     
-    # Initialize OpenAI LLM
+    # Initialize OpenAI LLM with explicit API key
     print("Loading OpenAI ChatGPT...")
-    llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0.7)
+    llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0.7, api_key="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")
     
     # Self-RAG Pipeline
     query = "What are the key features and advantages of Python?"
