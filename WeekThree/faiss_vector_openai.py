@@ -2,6 +2,8 @@ from langchain_community.document_loaders import TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain_openai import OpenAIEmbeddings
+from openai import api_key
+import os
 
 # Step 1: Load your document
 loader = TextLoader("sample.txt")  # Replace with your file path
@@ -12,7 +14,11 @@ splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
 chunks = splitter.split_documents(documents)
 
 # Step 3: Embed chunks
-embedding_model = OpenAIEmbeddings(model="text-embedding-ada-002",api_key="PS_sk-proj-T5iFtHAEffh8BZGTQSDlztuIUpxyZAsq1t0wa_NtaHbgQrk95AjWbeHKMGZVPM-dwuRp3FikX-T3BlbkFJ8K7444g5pD7ve77iaYpIKyMEck1zFkr3tz3N-spACYmjXXafUZSXXEs2YXzLNtOI9cHc1PWPoA")  # Requires OpenAI API key
+api_key_value = os.getenv("OPENAI_API_KEY")
+if not api_key:
+    raise ValueError("OPENAI_API_KEY environment variable not set. Set it before running the script.")
+
+embedding_model = OpenAIEmbeddings(model="text-embedding-ada-002",api_key=api_key_value)  # Requires OpenAI API key
 
 # Step 4: Store in FAISS vector store
 vector_store = FAISS.from_documents(chunks, embedding_model)
