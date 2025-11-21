@@ -1,0 +1,44 @@
+🛠️ Corrective RAG
+Use when: You need to detect and fix retrieval errors or hallucinations in generated answers.
+Best for: Enterprise QA systems, compliance-sensitive domains.
+How it works: Applies post-generation validation or reranking to correct faulty outputs.
+
+🧯 Fallback Mechanism RAG
+Use when: Retrieval fails or returns low-confidence results.
+Best for: Chatbots, customer support, low-resource domains.
+How it works: Falls back to default responses, templates, or alternate sources when retrieval is weak.
+
+🌐 Web Search RAG
+Use when: You need up-to-date, real-time information.
+Best for: News bots, financial assistants, travel planners.
+How it works: Integrates live search (e.g., Bing, Google) into the retrieval pipeline.
+
+🔄 Adaptive RAG
+Use when: You want retrieval to evolve based on user behavior or query complexity.
+Best for: Personalized tutors, evolving chat agents.
+How it works: Dynamically adjusts retrieval strategy (e.g., similarity vs. diversity) using feedback loops.
+
+🧠 Knowledge Graph RAG
+Use when: Your data is highly structured with entities and relationships.
+Best for: Legal, medical, scientific domains.
+How it works: Uses graph traversal and entity linking to retrieve semantically rich context.
+
+🧬 Self RAG
+Use when: You want the model to autonomously decide what to retrieve.
+Best for: Autonomous agents, long-form reasoning.
+How it works: The model generates its own retrieval queries based on internal reasoning.
+
+🔗 Fusion RAG
+Use when: You want to combine multiple retrieval sources or strategies.
+Best for: Multi-modal assistants, hybrid knowledge bases.
+How it works: Merges results from different retrievers (e.g., vector + keyword + graph) into a unified context.
+
+🚀 Advanced RAG
+Use when: You need high performance across diverse tasks.
+Best for: Production-grade AI systems.
+How it works: Combines multiple enhancements—reranking, feedback, multi-hop retrieval, caching, etc..
+
+💡 Speculative RAG
+Use when: You want faster generation with minimal latency.
+Best for: Real-time applications, mobile agents.
+How it works: Generates speculative outputs before retrieval completes, then refines them post-retrieval.
