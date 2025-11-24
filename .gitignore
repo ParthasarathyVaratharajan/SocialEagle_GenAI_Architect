@@ -34,3 +34,12 @@ WeekFour/.env
 "WeekFour/.env" 
 ".env" 
 "WeekFour/.env"  
+
+
+# Environment & secrets
+.env
+.env.*
+*.key
+*.pem
+*.token
+*.secret
