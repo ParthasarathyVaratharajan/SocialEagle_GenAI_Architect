@@ -1,0 +1,20 @@
+Task 1:
+Create an AI Research Agent using n8n that:
+Collects trending information from Twitter (X) and Reddit
+Summarizes the research into a one-page newsletter
+Includes one relevant image
+Formats the content neatly and clearly
+Outcome: Sends the newsletter to Slack and Gmail
+
+
+Task 2 :
+Use the same AI Research Agent from Task 1 and extend it as follows:
+1.     Convert the workflow to run on a scheduled trigger (daily).
+2.     Add a webhook to handle user subscriptions.
+3.     Convert the solution into a Micro-SaaS using Lovable or Google AI Studio.
+4.     When a user subscribes with their email:
+o   Send an immediate welcome email
+o   Automatically send the AI-generated newsletter on a daily basis
+5.     Ensure the daily newsletter is delivered via email (and optionally Slack, if configured).
+Outcome:
+A simple Micro-SaaS where users subscribe with their email and receive a daily AI-generated newsletter automatically.

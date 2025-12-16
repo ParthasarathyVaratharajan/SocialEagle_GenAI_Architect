@@ -657,12 +657,14 @@ with tab2:
     st.header("Preview & Approve Clips")
     
     draft_clips = [c for c in st.session_state.clips if c['status'] == 'draft']
+    approved_clips = [c for c in st.session_state.clips if c['status'] == 'approved']
     
-    if len(draft_clips) == 0:
+    if len(draft_clips) == 0 and len(approved_clips) == 0:
         st.info("📭 No clips waiting for approval. Create clips in the 'Create Clip' tab first!")
     else:
-        st.write(f"**{len(draft_clips)} clips waiting for your approval**")
-        st.divider()
+        if len(draft_clips) > 0:
+            st.write(f"**{len(draft_clips)} clips waiting for your approval**")
+            st.divider()
         
         for idx, clip in enumerate(draft_clips):
             with st.container():
@@ -734,13 +736,14 @@ with tab2:
                                 st.success(f"✅ Clip approved and downloaded! ({file_size / (1024*1024):.2f} MB)")
                                 st.info("➡️ Go to 'Publish' tab to publish this clip")
                                 
+                                # ✅ Download button inside block
                                 with open(output_file, 'rb') as f:
                                     st.download_button(
                                         "🧪 Test Download Video",
                                         f,
                                         file_name=f"test_clip_{clip['id'][:8]}.mp4",
                                         mime="video/mp4",
-                                        key=f"download_{clip['id']}"
+                                        key=f"test_download_{idx}_{clip['id']}"
                                     )
                                 
                                 st.rerun()
@@ -756,9 +759,23 @@ with tab2:
                                 break
                         st.success("Clip deleted!")
                         st.rerun()
-                
-                st.divider()
-
+        
+        # ✅ Show already approved clips with persistent download button
+        if len(approved_clips) > 0:
+            st.write(f"**{len(approved_clips)} approved clips ready for publishing**")
+            st.divider()
+            
+            for idx, clip in enumerate(approved_clips):
+                st.subheader(f"🎬 {clip['title']} (Approved)")
+                if clip.get('video_file_path') and os.path.exists(clip['video_file_path']):
+                    with open(clip['video_file_path'], 'rb') as f:
+                        st.download_button(
+                            "⬇️ Download Approved Clip",
+                            f,
+                            file_name=f"approved_clip_{clip['id'][:8]}.mp4",
+                            mime="video/mp4",
+                            key=f"approved_download_{idx}_{clip['id']}"
+                        )                 
 with tab3:
     st.header("Publish Approved Clips")
     
@@ -852,14 +869,17 @@ with tab3:
             
             if os.path.exists(selected_clip['video_file_path']):
                 with open(selected_clip['video_file_path'], 'rb') as f:
-                    with open(output_file, 'rb') as f:
-                        st.download_button(
-                            "🧪 Test Download Video",
-                            f,
-                            file_name=f"test_clip_{clip['id'][:8]}.mp4",
-                            mime="video/mp4",
-                            key=f"test_download_{idx}_{clip['id']}"
-                        )
+                    if clip.get('video_file_path') and os.path.exists(clip['video_file_path']):
+                       
+
+                        with open(clip['video_file_path'], 'rb') as f:
+                            st.download_button(
+                                "⬇️ Download Approved Clip",
+                                f,
+                                file_name=f"approved_clip_{clip['id'][:8]}.mp4",
+                                mime="video/mp4",
+                                key=f"approved_download_{idx}_{clip['id']}_{uuid.uuid4()}"
+                            )
                 
                 st.caption("Download and upload manually to any platform")
         

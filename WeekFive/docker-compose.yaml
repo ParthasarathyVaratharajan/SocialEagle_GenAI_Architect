@@ -1,0 +1,8 @@
+services:
+  livekit:
+    image: livekit/livekit-server:latest
+    ports:
+      - "7880:7880"
+    environment:
+      LIVEKIT_KEYS: "APIiCKKcUv7S7iE: Sz8bIti10r7w4kgsRXQyYVKv1kL4xpSWApqujvlK26A"
+      LIVEKIT_HOST: parthase-d79zfhfl.livekit.cloud
