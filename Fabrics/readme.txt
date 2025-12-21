@@ -1,0 +1,1 @@
+https://learn.microsoft.com/en-us/fabric/data-warehouse/tutorial-introduction
